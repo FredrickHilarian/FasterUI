@@ -1,0 +1,485 @@
+@media (max-width: 767px) {
+
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0 112px;
+    box-sizing: border-box;
+    background: #F5F8FF;
+
+    #projects {
+        margin: 300px 0px 0px !important ;
+    }
+}
+
+.primary-paragraph{
+    color: #8987A1;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 21px */
+    /* text-align: center !important; */
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    margin: 16px 0px;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.60); 
+}
+
+nav ul li {
+    /* margin: 0 15px; */
+    margin: 22px 42px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8987A1;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.sign-tab{
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+.sign{
+   display: flex;
+   justify-content: space-between;
+   gap: 18px;
+   align-items: center;
+}
+.sign-In-Button{
+    color: #8987A1;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    opacity: 0.8;
+    border: none;
+    background: none; 
+}
+
+.sign-Up-Button{
+    width: 132px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #4E47FF;   
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    border: none;
+}
+
+.mobileTabMenu{
+    display: block;
+}
+  
+.mainMenu {
+    position: fixed;
+    top: 86px !important;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease 0s;
+    }
+
+    .closeMenu {
+        /* right: 10px; */
+        display: none;
+        cursor: pointer;
+    }
+
+    .mainMenu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .openMenu {
+    display: block;
+    cursor: pointer;
+    }
+
+    .fa {
+    color: #000;
+    font-size: 24px;
+    }
+
+    ul {
+    list-style: none;
+    padding: 10px 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.60); 
+}
+
+ul li {
+    margin: 12px 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+    .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+}
+
+@media (max-width: 1200px) {
+   body {
+    padding: 0 50px;
+   }
+
+    nav, .sign {
+        display: none;
+    }
+
+    /* .mobileTabMenu {
+        position: relative;
+    } */
+    
+
+    .tab-mask-design{
+      width: 650px;
+    }
+
+    .container-home{
+        position: relative;
+        top: 0px !important;
+    }
+
+    #services-section {
+        position: relative;
+        top: -200px;
+    }
+
+    .mask-Design-Tab-View {
+       width: 650px;
+    }
+      
+
+} 
+
+.services-container{
+    display:grid;
+    margin: 32px 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "service-card-1" "service-card-2" "service-card-3" "service-card-4"
+    "service-card-5" "service-card-6";
+    gap: 16px;
+}
+
+.pricing-container {
+    display: grid;
+    margin: 32px 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.2fr 0.2fr;
+    grid-template-areas:
+    "pricing-card-1"
+    "pricing-card-2"
+    "pricing-card-3";
+    gap: 16px;
+}
+   .mobile-mask-design{
+    width: 100px;
+   }
+
+   .mask-Design-Mobile-View{
+     width: 400px;
+   }
+
+   @media (max-width: 500px) {
+    .mask-Design-Mobile-View{
+        width: 400px;
+      }
+   }
+
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.container-project{
+    position: relative;
+    /* top: -110px; */
+}
+
+.bg-dot {
+    background: url(/assets/images/mask.svg) no-repeat !important;
+    background-position: 0 !important;
+    background-repeat: no-repeat !important;
+}
+
+.first-description{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.discription-heading {
+    color: #252432;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 73.344px */
+    width: 300px;
+}
+
+.getintouch-Button{
+    width: 211px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #252432;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    border:none;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#services-section{
+    position: relative;
+    top: 70px;
+}
+
+.secondary-heading{
+    color: #252432;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    text-align: center !important;
+}
+/* .services-container{
+    display:grid;
+    margin: 32px 0 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1.2fr;
+    grid-template-areas: "service-card-1 service-card-2 service-card-3 service-card-4"
+    "service-card-5 service-card-5 service-card-6 service-card-4";
+    gap: 32px;
+} */
+
+#service-card-1,
+#service-card-2,
+#service-card-3,
+#service-card-4,
+#service-card-5,
+#service-card-6 {
+    padding: 32px 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: start;
+}
+
+#service-card-1{
+    grid-area: service-card-1;
+}
+
+#service-card-2{
+    grid-area: service-card-2;
+}
+
+#service-card-3{
+    grid-area: service-card-3;
+}
+
+#service-card-4{
+    grid-area: service-card-4;
+}
+
+#service-card-5{
+    grid-area: service-card-5;
+    /* margin-bottom: 32px; */
+}
+#service-card-6{
+    grid-area: service-card-6;
+}
+
+.service-card-4-desktop-view {
+    display: none;
+}
+
+.service-card-4-tab-mobile-view {
+   display: block;
+}
+
+.service, .faq-item {
+    margin-bottom: 20px;
+}
+
+.icon{
+    border-radius: 9px;
+    padding: 10px;
+    background-color: #F5F8FF;
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+
+.webflow-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.webflow-large-icon{
+   padding: 77px 64px;
+   background-color: #5B54FF;
+   border-radius: 5px;
+}
+
+.image-1{
+    margin-top: 42px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    position: relative;
+}
+
+.footer-container{
+    display:grid;
+    /* margin: 32px 0 0; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr;
+    grid-template-areas: "footer-card-1" "footer-card-2";
+    gap: 32px;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer-card-1 {
+    grid-area: footer-card-1;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 30px 0px 50px;
+}
+
+.faq-container{
+    display:grid;
+    margin: 32px 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.1fr 1.2fr;
+    grid-template-areas: "faq-card-1" "faq-card-2";
+    gap: 32px;
+}
+
+.vector-1 {
+    width: 200px !important;
+}
+
+.vector-2 {
+    width: 200px !important;
+}
+
+.pricing-details{
+   text-align: center !important;
+}
+
+}
